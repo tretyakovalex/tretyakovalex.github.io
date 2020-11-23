@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<?php
+		$myfile = fopen("text.txt", "w") or die("Unable to open file!");
+		$text = "Hello world!\n";
+		fwrite($myfile, $text);
+		fclose($myfile);
+		?>
+		<!-- <button type="button" onClick="Test()">Click Me</button> -->
+
+	</body>
+</html>

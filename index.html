@@ -1,1 +1,56 @@
-hello world
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<style>
+			table {
+			  font-family: arial, sans-serif;
+			  border-collapse: collapse;
+			  width: 50%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			td, th {
+			  border: 1px solid #dddddd;
+			  text-align: left;
+			  padding: 8px;
+			}
+		</style>
+		<script src="addEntries.js"></script>
+		<script src="saveEntries.js"></script>
+		<title>Spending Tracker</title>
+	</head>
+
+	<body>
+		<h1 style="text-align: center">Building a site to track my spendings</h1>
+
+			<form action="InsertRow()">
+				<label for="inputCategory">Category:</label><br>
+				<input type="text" id="inputCategoryField" name="inputCategoryFrame" value="">
+			<br>
+				<label for="inputAmount">Amount:</label><br>
+				<input type="text" id="inputAmountField" name="inputAmountFrame" value="">
+			<br>
+				<label for="inputDate">Date:</label><br>
+				<input type="text" id="inputDateField" name="inputDateFrame" value="">
+			<br>
+			<br>
+			</form>
+
+		<button type="button" onClick="InsertRow()">Add Row</button>
+		<button type="button" onClick="SaveTable()">Save Table</button>
+
+		<table id="Spendings">
+			<tr>
+				<th>Category</th>
+				<th>Amount</th>
+				<th>Date</th>
+			</tr>
+		</table>
+
+		<!-- <div id="div1">
+			<p>1st paragraph</p>
+		</div> -->
+
+	</body>
+</html>
